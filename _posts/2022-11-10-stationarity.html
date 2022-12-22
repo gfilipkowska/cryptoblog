@@ -50,11 +50,10 @@ background: '/img/bg-post.jpg'
 
 <p>To test this series we run the following code:</p>
 
-<pre><code class="language-python">> from arch.unitroot import ADF
+<pre><code>> from arch.unitroot import ADF
 > print(ADF(y_1, method = 'bic', trend='c'))
 </code></pre>
-<pre><code class="nohighlight">
-    Augmented Dickey-Fuller Results
+<pre><code>    Augmented Dickey-Fuller Results
     =====================================
     Test Statistic                -31.923
     P-value                         0.000
@@ -70,7 +69,7 @@ background: '/img/bg-post.jpg'
 
 <p> For trending series:</p>
 
-<pre><code class="language-python">> x = np.arange(0, 10, 0.01)
+<pre><code>> x = np.arange(0, 10, 0.01)
 > y_2 = []
 > for i in range(0,1000):
 >    y_2.append(x[i]+errors[i])
@@ -82,10 +81,9 @@ background: '/img/bg-post.jpg'
 <p></p>
 
 
-<pre><code class="language-python">> print(ADF(y_2, method = 'bic', trend='c'))
+<pre><code>> print(ADF(y_2, method = 'bic', trend='c'))
 </code></pre>
-<pre><code class="nohighlight">
-    Augmented Dickey-Fuller Results
+<pre><code>    Augmented Dickey-Fuller Results
     =====================================
     Test Statistic                 -0.746
     P-value                         0.834
@@ -102,10 +100,9 @@ background: '/img/bg-post.jpg'
     since only a constant component was allowed for, and these series cointains a linear trend, and so the mean is not time invariant. Let us fix this by including a constant and linear time trend.
 </p>
 
-<pre><code class="language-python">> print(ADF(y_2, method = 'bic', trend='ct'))
+<pre><code>> print(ADF(y_2, method = 'bic', trend='ct'))
 </code></pre>
-<pre><code class="nohighlight">
-       Augmented Dickey-Fuller Results
+<pre><code>       Augmented Dickey-Fuller Results
     =====================================
     Test Statistic                -30.829
     P-value                         0.000
@@ -121,11 +118,10 @@ background: '/img/bg-post.jpg'
 
 <p>After taking away this linear trend the null hypothesis can indeed be rejected.</p>
 
-<pre><code class="language-python">> from arch.unitroot import ADF
+<pre><code>> from arch.unitroot import ADF
 > print(ADF(y_1, method = 'bic', trend='c'))
 </code></pre>
-<pre><code class="nohighlight">
-       Augmented Dickey-Fuller Results
+<pre><code>       Augmented Dickey-Fuller Results
     =====================================
     Test Statistic                -31.923
     P-value                         0.000
