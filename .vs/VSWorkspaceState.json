@@ -5,13 +5,13 @@
     "\\assets\\vendor",
     "\\assets\\vendor\\syntax-highlighting",
     "\\img",
+    "\\img\\events",
     "\\img\\posts",
-    "\\img\\posts\\RSS2023",
-    "\\posts",
+    "\\img\\posts\\CryptoEvent2023",
     "\\_layouts",
     "\\_posts",
     "\\_sass"
   ],
-  "SelectedNode": "\\events.html",
+  "SelectedNode": "\\img\\posts",
   "PreviewInSolutionExplorer": false
 }
