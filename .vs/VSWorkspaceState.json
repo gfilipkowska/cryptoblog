@@ -5,12 +5,13 @@
     "\\assets\\vendor",
     "\\assets\\vendor\\syntax-highlighting",
     "\\img",
-    "\\img\\events",
-    "\\img\\posts",
-    "\\img\\posts\\CryptoEvent2023",
+    "\\img\\avatars",
+    "\\img\\posts\\stationarity",
+    "\\img\\posts\\UKFin Bristol 2024",
     "\\_layouts",
     "\\_posts",
     "\\_sass"
   ],
+  "SelectedNode": "\\img\\avatars\\Steve_Yang.webp",
   "PreviewInSolutionExplorer": false
 }
